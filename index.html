@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script src="js/script.js" defer></script>
+
+    <title>Formularopgave - Lonnie </title>
+</head>
+
+<body>
+
+    <div class="muthur-6000">
+            <img src="media/muthur6000.png">
+    </div>
+
+    <div class="main-border">
+
+         <div class="nostromo">
+            <img src="media/nostromo.png">
+        </div>
+        <div class="greeting">
+            <h1>Welcome to the crew registration process for the USCSS Nostromo.</h1>
+                
+            <h2>Please enter your details.</h2>
+        </div>
+
+        <form id="join-crew">
+
+            <label>First Name:
+                <input type="text" name="firstName" required minlength="2" maxlength="20">
+            </label>
+
+            <label>Last Name:
+                <input type="text" name="lastName" required minlength="2" maxlength="20">
+            </label>
+
+            <label>Age:
+                <input type="number" name="age" required maxlength="3">
+            </label>
+
+            <label>Weyland Yutani issued E-mail address:
+                <input type="text" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            </label>
+
+            <label>Authorization ID:
+                <input type="text" name="authID" placeholder="4-12 characters" required minlength="4" maxlength="12">
+            </label>
+            <div class="pass-check">
+                <label>Password:
+                    <input type="password" name="password" placeholder="Min. 8 characters" required minlength="8" autocomplete="off">
+                </label>
+
+                <label>Repeat Password:
+                    <input type="password" name="passwordRepeat" placeholder="Min. 8 characters" required minlength="8" autocomplete="off">
+                </label>
+            </div>
+            <input type="submit" name="submit" value="Submit Registration">
+
+        </form>
+
+        <div class="message"></div>
+
+        <div class="weylandyutani">
+            <img src="media/weylandyutani.png">
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

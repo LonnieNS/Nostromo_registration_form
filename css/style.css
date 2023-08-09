@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    color: #0bcb54;
+}
+
+html {
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    letter-spacing: 0.125em;
+    animation-duration: 0.01s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes textflicker {
+    from {
+        text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+    }
+    to {
+        text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+    }
+}
+
+
+body {
+    background-color:rgb(6, 25, 14);
+    padding: 50px;
+    padding-top: 10px;
+}
+
+.muthur-6000 {
+    display:flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.main-border {
+    border-style: solid;
+    border-color: #0bcb54;
+    border-radius: 10px;
+    background-color:#08824128;
+    padding: 50px;
+    padding-top: 30px;
+}
+
+h1 {
+    overflow: hidden;
+    border-right: .15em solid #0bcb54;; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15rem; 
+    font-size:1.2rem;
+    text-align: center;
+    animation: 
+    typing 5.5s steps(63, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 90% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #0bcb54;}
+}
+
+
+.nostromo{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.nostromo img{
+    width:8%;
+}
+
+h2 {
+    font-size:1rem;
+    text-align: center;
+    letter-spacing: .15rem; 
+    margin-top: 40px;
+}
+
+form {
+    width: 70%;
+    padding: 50px;
+    padding-top:0;
+    padding-bottom: 20px;
+    margin: 40px auto;
+    margin-bottom: 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom:20px;
+    border: none;
+    background-color: #045336;
+    animation-duration: 0.01s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+input:valid {
+    background-color:#0a8a3b;
+}
+
+input:focus {
+    outline:transparent;
+}
+
+
+form input[type=submit] {
+    height: 43px;
+}
+
+form input[type=submit]:valid {
+    background-color: #045336;
+}
+
+.success {
+    background-color:#0a8a3b;
+}
+
+.message {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.weylandyutani {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.weylandyutani img {
+    width:10%;
+}
+
+.hidden {
+    display:none;
+}
